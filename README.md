@@ -4,13 +4,12 @@ This repository contains Jupyter notebooks for the analysis, prediction, and for
 
 ## Table of Contents
 
-  * [Project Overview]
-  * [Files Description]
-  * [Setup and Installation]
-  * [Usage]
-  * [Results and Visualizations]
-  * [Contributing]
-  * [License]
+  * [Project Overview](#project-overview)
+  * [Files Description](#files-description)
+  * [Setup and Installation](#setup-and-installation)
+  * [Usage](#usage)
+  * [Results and Visualizations](#results-and-visualizations)
+  * [Contributing](#contributing)
 
 ## Project Overview
 
@@ -24,9 +23,9 @@ The workflow is divided into three main parts:
 
 ## Files Description
 
-  * `Carbon_Emision_Prediction[1].ipynb`: This notebook handles the initial data cleaning and preprocessing steps. It identifies and removes rows with missing values to create a clean dataset. The cleaned data is then exported to a CSV file named `data_cleaned.csv`.ipynb].
-  * `Carbon_Emision_Prediction2 (1).ipynb`: This notebook focuses on exploratory data analysis (EDA) and data understanding. It loads the `data_cleaned.csv` file, displays the shape and data types of the dataset, provides descriptive statistics, and includes visualizations such as a "4d plot" to explore relationships between variables like urban population growth, CO₂ per capita, energy consumption per capita, and urban agglomeration percentage.
-  * `Carbon_Emision_Prediction3.ipynb`: This notebook contains the core machine learning pipeline. It includes data splitting (`train_test_split`), model training using `RandomForestRegressor`, cross-validation (`cross_val_score`), and evaluation metrics like `r2_score` and `mean_squared_error`. The notebook also generates forecasts for CO₂ emissions per capita for the next 20 years and saves the trained model as `model.pkl`. It also prints forecasted values for India for the last 5 years in the forecast period.
+  * `Carbon_Emision_Prediction[1].ipynb`: This notebook handles the initial data cleaning and preprocessing steps. It identifies and removes rows with any missing values and ensures data quality. The cleaned data is then exported to a CSV file named `data_cleaned.csv` for use in subsequent notebooks.
+  * `Carbon_Emision_Prediction2 (1).ipynb`: This notebook focuses on exploratory data analysis (EDA) and data understanding. It loads the `data_cleaned.csv` file, provides an overview of the dataset's shape and data types, and generates descriptive statistics. Key visualizations include a "4D plot" which explores the relationships between `urb_pop_growth_perc`, `co2_per_cap`, `en_per_cap`, and `pop_urb_aggl_perc`, providing insights into how urban population dynamics, energy consumption, and urbanization levels interact with CO₂ emissions.
+  * `Carbon_Emision_Prediction3.ipynb`: This notebook contains the core machine learning pipeline. It includes data splitting using `train_test_split`, model training with `RandomForestRegressor`, and performance evaluation using cross-validation (`cross_val_score`) and metrics such as `r2_score` and `mean_squared_error`. The notebook generates forecasts for CO₂ emissions per capita for the next 20 years, visualizes these forecasts, and saves the trained model as `model.pkl`. It also specifically prints the forecasted CO₂ values for India for the last 5 years in the forecast period.
 
 ## Setup and Installation
 
@@ -50,8 +49,8 @@ pip install pandas numpy matplotlib seaborn scikit-learn statsmodels joblib
 
 1.  **Clone the repository:**
     ```bash
-    git clone <https://github.com/AkankshaRondla/carbon_emission_prediction/>
-    cd <carbon_emission_prediction>
+    git clone https://github.com/AkankshaRondla/carbon_emission_prediction/
+    cd carbon_emission_prediction
     ```
 2.  **Run the notebooks in sequence:**
       * Start with `Carbon_Emision_Prediction[1].ipynb` to clean the data and generate `data_cleaned.csv`.
@@ -60,7 +59,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn statsmodels joblib
 
 ## Results and Visualizations
 
-The `Carbon_Emision_Prediction3.ipynb` notebook includes a plot titled 'Forecasted CO₂ Emissions per Capita (Next 20 Years)', which visualizes the future trends of CO₂ emissions. Additionally, `Carbon_Emision_Prediction2 (1).ipynb` contains various plots for understanding the dataset characteristics and relationships between features.
+The `Carbon_Emision_Prediction3.ipynb` notebook includes a plot titled 'Forecasted CO₂ Emissions per Capita (Next 20 Years)', which visualizes the future trends of CO₂ emissions based on the trained model. Additionally, `Carbon_Emision_Prediction2 (1).ipynb` contains various plots for understanding the dataset characteristics and relationships between features, including a "4D plot" that helps in visualizing complex interactions between multiple variables.
 
 ## Contributing
 
