@@ -4,13 +4,13 @@ This repository contains Jupyter notebooks for the analysis, prediction, and for
 
 ## Table of Contents
 
-  * [Project Overview](https://www.google.com/search?q=%23project-overview)
-  * [Files Description](https://www.google.com/search?q=%23files-description)
-  * [Setup and Installation](https://www.google.com/search?q=%23setup-and-installation)
-  * [Usage](https://www.google.com/search?q=%23usage)
-  * [Results and Visualizations](https://www.google.com/search?q=%23results-and-visualizations)
-  * [Contributing](https://www.google.com/search?q=%23contributing)
-  * [License](https://www.google.com/search?q=%23license)
+  * [Project Overview]
+  * [Files Description]
+  * [Setup and Installation]
+  * [Usage]
+  * [Results and Visualizations]
+  * [Contributing]
+  * [License]
 
 ## Project Overview
 
@@ -50,7 +50,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn statsmodels joblib
 
 1.  **Clone the repository:**
     ```bash
-    git clone <[repository_url](https://github.com/AkankshaRondla/carbon_emission_prediction/>
+    git clone <https://github.com/AkankshaRondla/carbon_emission_prediction/>
     cd <carbon_emission_prediction>
     ```
 2.  **Run the notebooks in sequence:**
