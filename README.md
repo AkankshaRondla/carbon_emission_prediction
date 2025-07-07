@@ -2,6 +2,8 @@
 
 This repository contains Jupyter notebooks for the analysis, prediction, and forecasting of CO₂ emissions. The project involves data cleaning, exploratory data analysis (EDA), machine learning model training, and forecasting of future CO₂ emissions per capita.
 
+Link to the Model : https://drive.google.com/file/d/1HUfPu0WjLzU6oP7rBS-aDca7HfnZO1uR/view?usp=sharing
+
 ## Table of Contents
 
   * [Project Overview](#project-overview)
